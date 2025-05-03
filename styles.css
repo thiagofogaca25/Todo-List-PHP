@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    padding: 30px;
+    color: #333;
+}
+
+.todo-container {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+#task-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.done .desc {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.toggle-status {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.save {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.save,
+button.cancel {
+    display: none;
+}
+
+.edit-input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+form input[type="text"] {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1px;  /* Espaçamento entre os botões */
+}
+
+.task-actions button {
+    margin-left: 1px;  /* Para dar um pequeno espaçamento entre os botões */
+}
+
+/* Alinha o texto da tarefa à esquerda */
+.desc {
+    flex-grow: 1;
+}
